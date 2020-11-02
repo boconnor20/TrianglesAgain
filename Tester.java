@@ -4,5 +4,6 @@ public class Tester{
     Point p2= p1;
     System.out.println(p2.getX());
     System.out.println(p2.getY());
+    System.out.println(p1.equals(p2));
   }
 }
