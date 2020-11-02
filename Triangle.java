@@ -23,10 +23,20 @@ public class Triangle{
       double semiP=getPerimeter()/2;
       return Math.sqrt(semiP*(semiP - lengthA) * (semiP - lengthB) * (semiP - lengthC));
    }
-  /* public String classify() {
+   public String classify(){
+     double lengthA = Math.round(v1.distanceTo(v2) * 10000.0) / 10000.0;
+     double lengthB = Math.round(v2.distanceTo(v3) * 10000.0) / 10000.0;
+     double lengthC = Math.round(v1.distanceTo(v3) * 10000.0) / 10000.0;
+     if(lengthA != lengthB && lengthB != lengthC && lengthC != lengthA) {
+       return "scalene";
+     }
+     else if (lengthA == lengthB && lengthA == lengthC) {
+       return "equilateral";
+     }
+   else return "isosceles";
 
    }
-   public String toString(){
+   /*public String toString(){
 
    }
    public void setVertex(int index, Point newP){
